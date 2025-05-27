@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BDFB438-2352-E05A-3A6B-08FC0F68089C" name="RESPONSAVEL">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:19:51 UTC</createdTime>
+<comment><![CDATA[Representa os operadores ou funcionários responsáveis por registrar consumos ou movimentações de materiais no sistema.]]></comment>
+<commentInRDBMS><![CDATA[Representa os operadores ou funcionários responsáveis por registrar consumos ou movimentações de materiais no sistema.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_RESPONSAVEL" id="22DB1DBA-54E6-AD1D-1F29-C746663CD07E">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:32:56 UTC</createdTime>
+<comment><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></comment>
+<commentInRDBMS><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME" id="91E0EBAE-B3AF-6640-30F4-9665149C7D7D">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:33:17 UTC</createdTime>
+<comment><![CDATA[Nome completo do responsável que fez a movimentação ou registro de consumo.]]></comment>
+<commentInRDBMS><![CDATA[Nome completo do responsável que fez a movimentação ou registro de consumo.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CARGO" id="9BF31FFF-6B7C-B4D2-CCA2-2EE162A3F9B5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:33:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cargo ou função da pessoa (ex: técnico de enfermagem, farmacêutico, almoxarife).]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4BC3D1F-5B73-BAD1-9440-C3EB1DA33255" name="RESPONSAVEL PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:33:04 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>22DB1DBA-54E6-AD1D-1F29-C746663CD07E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

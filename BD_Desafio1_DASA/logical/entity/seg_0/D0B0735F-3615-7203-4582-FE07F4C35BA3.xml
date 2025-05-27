@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0B0735F-3615-7203-4582-FE07F4C35BA3" name="MATERIAL">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:18:57 UTC</createdTime>
+<comment><![CDATA[Representa os materiais disponíveis no sistema, como reagentes, EPIs, seringas, entre outros. Contém informações como nome, unidade de medida, categoria e quantidade atual em estoque.]]></comment>
+<commentInRDBMS><![CDATA[Representa os materiais disponíveis no sistema, como reagentes, EPIs, seringas, entre outros. Contém informações como nome, unidade de medida, categoria e quantidade atual em estoque.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MATERIAL" id="19AB6BC0-3418-E6D1-550E-E719AA7D6105">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:27:21 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada material cadastrado no sistema.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de cada material cadastrado no sistema.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME" id="4F29B151-6AC9-46F3-46C3-B45094A3122E">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:28:47 UTC</createdTime>
+<comment><![CDATA[Nome descritivo do material (ex: "Reagente A", "Luvas Nitrílicas").
+]]></comment>
+<commentInRDBMS><![CDATA[Nome descritivo do material (ex: "Reagente A", "Luvas Nitrílicas").
+]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORIA" id="7B09A4CA-0BA2-8DAB-2ABE-28309F0F4772">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:29:03 UTC</createdTime>
+<comment><![CDATA[Classificação do material, como reagente, EPI, insumo hospitalar, etc.
+]]></comment>
+<commentInRDBMS><![CDATA[Classificação do material, como reagente, EPI, insumo hospitalar, etc.
+]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTIDADE_TOTAL" id="0B55F1EE-9DD4-36EE-55C3-C4BA1799F9D5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:29:44 UTC</createdTime>
+<comment><![CDATA[Quantidade disponível atualmente no almoxarifado. Atualizada a cada movimentação de estoque.]]></comment>
+<commentInRDBMS><![CDATA[Quantidade disponível atualmente no almoxarifado. Atualizada a cada movimentação de estoque.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIDADE_MEDIDA" id="083C7CD8-90EE-58CE-5731-92C7256F09D9">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 02:08:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ex: un, ml, kg]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5187B0EB-1DEF-B809-43C6-86F9C33C957C" name="MATERIAL PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:30:43 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>19AB6BC0-3418-E6D1-550E-E719AA7D6105</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

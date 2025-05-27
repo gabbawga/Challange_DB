@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="737A8191-FC1B-C00B-9CF0-923B5C2E0184" containerWithKeyObject="753282F4-0BC1-BB11-5BCE-F426EAAABFAF" localFKIndex="09EB20AA-9A5E-B30E-3368-2D1A872D372F" name="REGISTRO_CONSUMO_UNIDADE_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>A2C190D7-2AC3-A7B8-3499-9B83A385B9EB</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<referredTableLongName>UNIDADE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7F93F5AB-0D93-2DF1-CA6B-505F73A97769</referredTableID>
+<keyObject>94545EE4-CD26-97B8-CE8A-579A9F0E133C</keyObject>
+<referredKeyID>94545EE4-CD26-97B8-CE8A-579A9F0E133C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_UNIDADE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

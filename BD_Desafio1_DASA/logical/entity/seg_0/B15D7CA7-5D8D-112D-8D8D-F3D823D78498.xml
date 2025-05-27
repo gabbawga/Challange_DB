@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B15D7CA7-5D8D-112D-8D8D-F3D823D78498" name="REGISTRO_CONSUMO">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:20:02 UTC</createdTime>
+<comment><![CDATA[Armazena os apontamentos de consumo de materiais. Cada linha indica que um material foi consumido por uma unidade, sob responsabilidade de um operador, em um determinado momento.]]></comment>
+<commentInRDBMS><![CDATA[Armazena os apontamentos de consumo de materiais. Cada linha indica que um material foi consumido por uma unidade, sob responsabilidade de um operador, em um determinado momento.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_REGISTRO" id="8C428BEE-C1DF-A6DC-6B5C-45DFF0CF8442">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:34:23 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada apontamento de consumo.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de cada apontamento de consumo.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTIDADE" id="A7E6F688-1750-DEB6-DF22-806B853FC54A">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:34:58 UTC</createdTime>
+<comment><![CDATA[Quantidade do material consumido. Deve ser compatível com a unidade de medida do material.]]></comment>
+<commentInRDBMS><![CDATA[Quantidade do material consumido. Deve ser compatível com a unidade de medida do material.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CONSUMO" id="6E44C35B-6948-6E32-22BB-C54D7EE6718F">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:35:15 UTC</createdTime>
+<comment><![CDATA[Data e hora em que o consumo foi registrado. Importante para rastreabilidade.]]></comment>
+<commentInRDBMS><![CDATA[Data e hora em que o consumo foi registrado. Importante para rastreabilidade.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OBSERVACAO" id="20A36E20-AF64-1052-2525-7FD71B042E31">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:35:55 UTC</createdTime>
+<comment><![CDATA[Campo opcional para inserir comentários adicionais, como motivo da retirada, lote, ou uso específico.]]></comment>
+<commentInRDBMS><![CDATA[Campo opcional para inserir comentários adicionais, como motivo da retirada, lote, ou uso específico.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_RESPONSAVEL" id="A59BA74F-217C-2056-6475-00FF2AD9179C">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:19:47 UTC</createdTime>
+<comment><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></comment>
+<generatorID>397B7881-4AD4-499F-6ADF-FD90E4C07C5F</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<referedAttribute>22DB1DBA-54E6-AD1D-1F29-C746663CD07E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_UNIDADE" id="87332476-9A1B-086F-14B0-B38418F383B4">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 02:28:51 UTC</createdTime>
+<comment><![CDATA[ Identificador único da unidade onde os materiais são consumidos.
+]]></comment>
+<generatorID>A2C190D7-2AC3-A7B8-3499-9B83A385B9EB</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<referedAttribute>C3DE80FA-FB6D-459A-9F6B-036322022ED9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MATERIAL" id="699976AF-2EBA-7A1A-0235-B0D58CA27264">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 02:29:08 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada material cadastrado no sistema.]]></comment>
+<generatorID>C680D5AD-2FA5-B686-8288-5658D22AEEE8</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<referedAttribute>19AB6BC0-3418-E6D1-550E-E719AA7D6105</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE2F0E53-2AFE-F863-6855-A7C79AC6F591" name="REGISTRO_CONSUMO PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:37:32 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8C428BEE-C1DF-A6DC-6B5C-45DFF0CF8442</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

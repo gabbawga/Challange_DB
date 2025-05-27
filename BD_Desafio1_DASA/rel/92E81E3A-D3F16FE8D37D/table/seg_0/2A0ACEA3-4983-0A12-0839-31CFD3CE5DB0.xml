@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A0ACEA3-4983-0A12-0839-31CFD3CE5DB0" name="RESPONSAVEL">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Representa os operadores ou funcionários responsáveis por registrar consumos ou movimentações de materiais no sistema.]]></comment>
+<commentInRDBMS><![CDATA[Representa os operadores ou funcionários responsáveis por registrar consumos ou movimentações de materiais no sistema.]]></commentInRDBMS>
+<generatorID>2BDFB438-2352-E05A-3A6B-08FC0F68089C</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RESPONSAVEL" id="58352F41-BB5B-C5DB-DB26-06104194573B">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></comment>
+<commentInRDBMS><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></commentInRDBMS>
+<generatorID>22DB1DBA-54E6-AD1D-1F29-C746663CD07E</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="C5BF8BF6-F2D8-58AE-1FDD-E341A2E8D7D7">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Nome completo do responsável que fez a movimentação ou registro de consumo.]]></comment>
+<commentInRDBMS><![CDATA[Nome completo do responsável que fez a movimentação ou registro de consumo.]]></commentInRDBMS>
+<generatorID>91E0EBAE-B3AF-6640-30F4-9665149C7D7D</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARGO" id="05906461-E16A-CF86-9E0A-84AE4D526148">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cargo ou função da pessoa (ex: técnico de enfermagem, farmacêutico, almoxarife).]]></commentInRDBMS>
+<generatorID>9BF31FFF-6B7C-B4D2-CCA2-2EE162A3F9B5</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DD2A7ED-ABE2-BF1A-420E-698D0CFD0043" name="RESPONSAVEL_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>F4BC3D1F-5B73-BAD1-9440-C3EB1DA33255</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58352F41-BB5B-C5DB-DB26-06104194573B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

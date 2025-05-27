@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A6DE9B7-A655-DCA7-706A-FBA47185FF20" name="Almoxarifado">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:26:15 UTC</createdTime>
+<comment><![CDATA[Representa os locais físicos onde os materiais são armazenados. Utilizado nas movimentações de estoque para controle de entrada e saída.]]></comment>
+<commentInRDBMS><![CDATA[Representa os locais físicos onde os materiais são armazenados. Utilizado nas movimentações de estoque para controle de entrada e saída.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ALMOXARIFADO" id="1CF6CFAA-04D2-66F4-8053-D477836EDF9B">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:38:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de cada almoxarifado físico.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCALIZACAO" id="76A04EF3-0876-DD84-DBE7-752B66675CED">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:38:55 UTC</createdTime>
+<comment><![CDATA[Localização do almoxarifado (ex: "Prédio A - Subsolo", "Bloco Diagnóstico - Sala 102").]]></comment>
+<commentInRDBMS><![CDATA[Localização do almoxarifado (ex:"Bloco Diagnóstico - Sala 102").]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE608B00-1FEB-D1B8-EC74-54EDBF85E23D" name="Almoxarifado PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:38:44 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1CF6CFAA-04D2-66F4-8053-D477836EDF9B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

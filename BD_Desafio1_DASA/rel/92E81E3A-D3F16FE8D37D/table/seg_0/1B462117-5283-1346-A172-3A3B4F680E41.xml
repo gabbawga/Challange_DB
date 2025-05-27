@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B462117-5283-1346-A172-3A3B4F680E41" name="ALMOXARIFADO">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Representa os locais físicos onde os materiais são armazenados. Utilizado nas movimentações de estoque para controle de entrada e saída.]]></comment>
+<commentInRDBMS><![CDATA[Representa os locais físicos onde os materiais são armazenados. Utilizado nas movimentações de estoque para controle de entrada e saída.]]></commentInRDBMS>
+<generatorID>9A6DE9B7-A655-DCA7-706A-FBA47185FF20</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ALMOXARIFADO" id="2158AEC6-0E29-C18F-EE56-9D2EB66BFD05">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de cada almoxarifado físico.]]></commentInRDBMS>
+<generatorID>1CF6CFAA-04D2-66F4-8053-D477836EDF9B</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZACAO" id="03DC9511-EE75-EB07-C9A1-275A34E005A0">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Localização do almoxarifado (ex: "Prédio A - Subsolo", "Bloco Diagnóstico - Sala 102").]]></comment>
+<commentInRDBMS><![CDATA[Localização do almoxarifado (ex:"Bloco Diagnóstico - Sala 102").]]></commentInRDBMS>
+<generatorID>76A04EF3-0876-DD84-DBE7-752B66675CED</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C287A932-4770-A084-82B2-D5CBC230C862" name="Almoxarifado_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>DE608B00-1FEB-D1B8-EC74-54EDBF85E23D</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2158AEC6-0E29-C18F-EE56-9D2EB66BFD05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

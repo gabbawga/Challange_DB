@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87016F79-5D30-8B89-4787-DD272F740AB1" name="MOVIMENTACAO_ESTOQUE">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Registra movimentações de estoque, como entradas (reposição, compra) e saídas (transferências, ajustes). Cada movimentação está associada a um material, um almoxarifado e um responsável.]]></comment>
+<commentInRDBMS><![CDATA[Registra movimentações de estoque, como entradas (reposição, compra) e saídas (transferências, ajustes). Cada movimentação está associada a um material, um almoxarifado e um responsável.]]></commentInRDBMS>
+<generatorID>C3EC7329-4A62-15C3-6A10-064CE813C8A0</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MOVIMENTACAO" id="54F493C1-0988-DD48-978A-B3A86792EF91">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Identificador único da entrada ou saída de materiais.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único da entrada ou saída de materiais.]]></commentInRDBMS>
+<generatorID>50420D2F-5377-68FC-C1F8-0348DAE3E881</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_MOVIMENTACAO" id="D4B6A19B-FF9A-875B-3B9B-E5B0FEFED385">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Indica se foi uma entrada (compra, reposição) ou saída (transferência, baixa).]]></comment>
+<commentInRDBMS><![CDATA[Indica se foi uma entrada (compra, reposição) ou saída (transferência, baixa).]]></commentInRDBMS>
+<generatorID>C69D5941-DA62-5076-77FB-73AF74D9F41F</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTIDADE" id="4EA161E0-7B99-BBBC-8B08-4D3021C3B08E">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Quantidade movimentada no estoque. Valores negativos são evitados — controle por regras.
+]]></comment>
+<commentInRDBMS><![CDATA[Quantidade movimentada no estoque. Valores negativos são evitados — controle por regras.
+]]></commentInRDBMS>
+<generatorID>8E6173A6-B83C-8B6E-35A1-534F680FF2A9</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_MOVIMENTACAO" id="9BF18568-4C81-A88F-8306-EB3CB9B6D11D">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da movimentacao]]></commentInRDBMS>
+<generatorID>D524CFEE-D4FF-8267-2BBD-6D317D09471A</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MATERIAL" id="7BB21D63-0E0D-9504-FACD-51E4FD6FB062">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada material cadastrado no sistema.]]></comment>
+<generatorID>9D5CB799-B5FC-D0FC-0B66-672D76C8EE93</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A39C0353-88CE-667A-5DE4-57A1112E8F07" referredColumn="4CA4CB70-41D0-B7A2-7E1D-615124394642"/>
+</associations>
+</Column>
+<Column name="ID_ALMOXARIFADO" id="9A58D4BA-2829-4564-DF77-0432F7843FA5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>0CEE615D-C518-22B2-119F-4B1C8AD13686</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F624712C-16E7-1D4D-241C-ED9DB2A8FDD2" referredColumn="2158AEC6-0E29-C18F-EE56-9D2EB66BFD05"/>
+</associations>
+</Column>
+<Column name="ID_RESPONSAVEL" id="FB3F0D61-F212-11EC-25A0-13C2DFF827E5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></comment>
+<generatorID>E12525F3-EBFB-580C-A30B-7CEB967E3CA5</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="488BEC12-524D-7441-BFBC-8C37BB8D473D" referredColumn="58352F41-BB5B-C5DB-DB26-06104194573B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1285DB24-9325-E3CB-7696-099D1E6D4DB2" name="Movimentacao_Estoque_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>C6CBA45F-F485-3B57-EA04-AEBD85D73C70</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54F493C1-0988-DD48-978A-B3A86792EF91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B085160-EF31-3D03-7F86-CECC4A3B6A65" name="MOVIMENTACAO_ESTOQUE_RESPONSAVEL_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>FB3B6979-B3A8-E2B3-6188-F796DE93D7D8</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB3F0D61-F212-11EC-25A0-13C2DFF827E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C723A37-A713-FC4B-2A5A-E15D9930C2BE" name="MOVIMENTACAO_ESTOQUE_MATERIAL_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>E7C97CCE-6E6B-1CB3-C879-EAEA5B1293E1</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BB21D63-0E0D-9504-FACD-51E4FD6FB062"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="595628FE-066A-9B78-4D31-E400F15DA03F" name="MOVIMENTACAO_ESTOQUE_Almoxarifado_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>AABFE483-5265-7854-E2CC-5FD06CADA491</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A58D4BA-2829-4564-DF77-0432F7843FA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

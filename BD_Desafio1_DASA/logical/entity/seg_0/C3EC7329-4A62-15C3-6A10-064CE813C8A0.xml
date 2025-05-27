@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3EC7329-4A62-15C3-6A10-064CE813C8A0" name="MOVIMENTACAO_ESTOQUE">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:26:16 UTC</createdTime>
+<comment><![CDATA[Registra movimentações de estoque, como entradas (reposição, compra) e saídas (transferências, ajustes). Cada movimentação está associada a um material, um almoxarifado e um responsável.]]></comment>
+<commentInRDBMS><![CDATA[Registra movimentações de estoque, como entradas (reposição, compra) e saídas (transferências, ajustes). Cada movimentação está associada a um material, um almoxarifado e um responsável.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MOVIMENTACAO" id="50420D2F-5377-68FC-C1F8-0348DAE3E881">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:39:45 UTC</createdTime>
+<comment><![CDATA[Identificador único da entrada ou saída de materiais.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único da entrada ou saída de materiais.]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO_MOVIMENTACAO" id="C69D5941-DA62-5076-77FB-73AF74D9F41F">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:40:40 UTC</createdTime>
+<comment><![CDATA[Indica se foi uma entrada (compra, reposição) ou saída (transferência, baixa).]]></comment>
+<commentInRDBMS><![CDATA[Indica se foi uma entrada (compra, reposição) ou saída (transferência, baixa).]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTIDADE" id="8E6173A6-B83C-8B6E-35A1-534F680FF2A9">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:41:23 UTC</createdTime>
+<comment><![CDATA[Quantidade movimentada no estoque. Valores negativos são evitados — controle por regras.
+]]></comment>
+<commentInRDBMS><![CDATA[Quantidade movimentada no estoque. Valores negativos são evitados — controle por regras.
+]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_MOVIMENTACAO" id="D524CFEE-D4FF-8267-2BBD-6D317D09471A">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:41:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da movimentacao]]></commentInRDBMS>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ALMOXARIFADO" id="0CEE615D-C518-22B2-119F-4B1C8AD13686">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:20:59 UTC</createdTime>
+<generatorID>AABFE483-5265-7854-E2CC-5FD06CADA491</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<referedAttribute>1CF6CFAA-04D2-66F4-8053-D477836EDF9B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_RESPONSAVEL" id="E12525F3-EBFB-580C-A30B-7CEB967E3CA5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:21:45 UTC</createdTime>
+<comment><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></comment>
+<generatorID>FB3B6979-B3A8-E2B3-6188-F796DE93D7D8</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<referedAttribute>22DB1DBA-54E6-AD1D-1F29-C746663CD07E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MATERIAL" id="0628FFC4-D6BA-4DD5-562F-5F03FD1EBA3A">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 02:29:08 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada material cadastrado no sistema.]]></comment>
+<generatorID>E7C97CCE-6E6B-1CB3-C879-EAEA5B1293E1</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<referedAttribute>19AB6BC0-3418-E6D1-550E-E719AA7D6105</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C6CBA45F-F485-3B57-EA04-AEBD85D73C70" name="Movimentacao_Estoque PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:40:57 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>50420D2F-5377-68FC-C1F8-0348DAE3E881</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

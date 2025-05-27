@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONSOME_MATERIAL" directorySegmentName="seg_0" id="C680D5AD-2FA5-B686-8288-5658D22AEEE8">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:19:00 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<sourcePk>5187B0EB-1DEF-B809-43C6-86F9C33C957C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D0B0735F-3615-7203-4582-FE07F4C35BA3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B15D7CA7-5D8D-112D-8D8D-F3D823D78498</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

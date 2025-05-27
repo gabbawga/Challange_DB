@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="OCORRE_EM_UNIDADE" directorySegmentName="seg_0" id="A2C190D7-2AC3-A7B8-3499-9B83A385B9EB">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:19:27 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<sourcePk>69A10CBD-2536-A288-01A0-793DD599968A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B709F171-4C3F-7C17-2626-1018C18A388E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B15D7CA7-5D8D-112D-8D8D-F3D823D78498</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

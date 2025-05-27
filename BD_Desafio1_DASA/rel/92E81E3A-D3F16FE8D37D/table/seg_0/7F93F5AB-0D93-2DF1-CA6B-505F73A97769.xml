@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F93F5AB-0D93-2DF1-CA6B-505F73A97769" name="UNIDADE">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Representa as unidades/setores onde os materiais são consumidos, como UTI, Laboratório, Diagnóstico etc. Usada para rastrear onde ocorreu o consumo.
+
+]]></comment>
+<commentInRDBMS><![CDATA[Representa as unidades/setores onde os materiais são consumidos, como UTI, Laboratório, Diagnóstico etc. Usada para rastrear onde ocorreu o consumo.
+
+]]></commentInRDBMS>
+<generatorID>B709F171-4C3F-7C17-2626-1018C18A388E</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UNIDADE" id="F69015EB-66AB-2FCF-55A1-5A8FB2C4B94C">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[ Identificador único da unidade onde os materiais são consumidos.
+]]></comment>
+<commentInRDBMS><![CDATA[ Identificador único da unidade onde os materiais são consumidos.
+]]></commentInRDBMS>
+<generatorID>C3DE80FA-FB6D-459A-9F6B-036322022ED9</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="F18B1CC7-F553-93D6-B4E7-56EBD4E91739">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Nome da unidade (ex: "Laboratório Central", "Setor de Diagnóstico 1").]]></comment>
+<commentInRDBMS><![CDATA[Nome da unidade (ex: "Laboratório Central", "Setor de Diagnóstico 1").]]></commentInRDBMS>
+<generatorID>C48C9A7C-0D40-CB54-FF17-7EFA3B36BD85</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SETOR" id="FAECBED1-C698-EB72-671C-408CC01B2250">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Identificação do setor interno, útil para segmentar os locais de consumo (ex: "Diagnóstico", "UTI", "Pediatria").]]></comment>
+<commentInRDBMS><![CDATA[Identificação do setor interno, útil para segmentar os locais de consumo (ex: "Diagnóstico", "UTI", "Pediatria").]]></commentInRDBMS>
+<generatorID>87B12273-C2B7-DE9E-EE57-55D0EF28F580</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94545EE4-CD26-97B8-CE8A-579A9F0E133C" name="UNIDADE_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>69A10CBD-2536-A288-01A0-793DD599968A</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F69015EB-66AB-2FCF-55A1-5A8FB2C4B94C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

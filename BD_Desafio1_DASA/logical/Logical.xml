@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="C18F9484-40A2-1607-BF36-B7655AD66747" mainViewID="E55494CE-7B2D-2492-5BA6-2C962DDB4D93">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 00:17:42 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

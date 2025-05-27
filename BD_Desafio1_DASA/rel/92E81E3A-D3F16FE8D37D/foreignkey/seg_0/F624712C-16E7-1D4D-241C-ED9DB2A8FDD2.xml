@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F624712C-16E7-1D4D-241C-ED9DB2A8FDD2" containerWithKeyObject="87016F79-5D30-8B89-4787-DD272F740AB1" localFKIndex="595628FE-066A-9B78-4D31-E400F15DA03F" name="MOVIMENTACAO_ESTOQUE_Almoxarifado_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>AABFE483-5265-7854-E2CC-5FD06CADA491</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<referredTableLongName>ALMOXARIFADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1B462117-5283-1346-A172-3A3B4F680E41</referredTableID>
+<keyObject>C287A932-4770-A084-82B2-D5CBC230C862</keyObject>
+<referredKeyID>C287A932-4770-A084-82B2-D5CBC230C862</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ALMOXARIFADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

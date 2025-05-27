@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="OCORRE_EM_ALMOXARIFADO" directorySegmentName="seg_0" id="AABFE483-5265-7854-E2CC-5FD06CADA491">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:20:59 UTC</createdTime>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<engineerTo>
+<item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>
+</engineerTo>
+<sourcePk>DE608B00-1FEB-D1B8-EC74-54EDBF85E23D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9A6DE9B7-A655-DCA7-706A-FBA47185FF20</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C3EC7329-4A62-15C3-6A10-064CE813C8A0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

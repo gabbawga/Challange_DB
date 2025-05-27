@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="753282F4-0BC1-BB11-5BCE-F426EAAABFAF" name="REGISTRO_CONSUMO">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Armazena os apontamentos de consumo de materiais. Cada linha indica que um material foi consumido por uma unidade, sob responsabilidade de um operador, em um determinado momento.]]></comment>
+<commentInRDBMS><![CDATA[Armazena os apontamentos de consumo de materiais. Cada linha indica que um material foi consumido por uma unidade, sob responsabilidade de um operador, em um determinado momento.]]></commentInRDBMS>
+<generatorID>B15D7CA7-5D8D-112D-8D8D-F3D823D78498</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_REGISTRO" id="B12692C2-2B0A-1A65-AE26-875642357121">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada apontamento de consumo.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de cada apontamento de consumo.]]></commentInRDBMS>
+<generatorID>8C428BEE-C1DF-A6DC-6B5C-45DFF0CF8442</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTIDADE" id="57D64096-7981-64CF-B765-8D85CCF06935">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Quantidade do material consumido. Deve ser compatível com a unidade de medida do material.]]></comment>
+<commentInRDBMS><![CDATA[Quantidade do material consumido. Deve ser compatível com a unidade de medida do material.]]></commentInRDBMS>
+<generatorID>A7E6F688-1750-DEB6-DF22-806B853FC54A</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CONSUMO" id="AB158ECE-0130-D6A2-36E4-B1C4F3DF954B">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Data e hora em que o consumo foi registrado. Importante para rastreabilidade.]]></comment>
+<commentInRDBMS><![CDATA[Data e hora em que o consumo foi registrado. Importante para rastreabilidade.]]></commentInRDBMS>
+<generatorID>6E44C35B-6948-6E32-22BB-C54D7EE6718F</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACAO" id="9C92BDB7-A5B7-CBA5-01CD-4E3818E9CE4F">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Campo opcional para inserir comentários adicionais, como motivo da retirada, lote, ou uso específico.]]></comment>
+<commentInRDBMS><![CDATA[Campo opcional para inserir comentários adicionais, como motivo da retirada, lote, ou uso específico.]]></commentInRDBMS>
+<generatorID>20A36E20-AF64-1052-2525-7FD71B042E31</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MATERIAL" id="78900500-6A2C-8EAF-F1CF-B2E1E2C6BEB5">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Identificador único de cada material cadastrado no sistema.]]></comment>
+<generatorID>32965B3C-10A4-D0B0-483F-CD12A5BDD53B</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="064C8DD0-5ABF-9F05-26C9-5842782CD2EE" referredColumn="4CA4CB70-41D0-B7A2-7E1D-615124394642"/>
+</associations>
+</Column>
+<Column name="ID_UNIDADE" id="EBFCDE59-7E1D-84D7-966B-81EF59698F72">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[ Identificador único da unidade onde os materiais são consumidos.
+]]></comment>
+<generatorID>145B3D1E-A4B6-C356-7ACD-3E54B22BEC1B</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="737A8191-FC1B-C00B-9CF0-923B5C2E0184" referredColumn="F69015EB-66AB-2FCF-55A1-5A8FB2C4B94C"/>
+</associations>
+</Column>
+<Column name="ID_RESPONSAVEL" id="90CB5AE5-3BCF-BF21-03C9-8FCA8B6D5D2F">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[ Identificador único do funcionário ou usuário do sistema.]]></comment>
+<generatorID>A59BA74F-217C-2056-6475-00FF2AD9179C</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4FC9C68-0166-33E9-BDCF-AC2B9C18114D" referredColumn="58352F41-BB5B-C5DB-DB26-06104194573B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="082420B1-5605-523E-4B65-210363BF35C0" name="REGISTRO_CONSUMO_PK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>BE2F0E53-2AFE-F863-6855-A7C79AC6F591</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B12692C2-2B0A-1A65-AE26-875642357121"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="753CA976-54ED-BDAC-E041-1CDE393200E8" name="REGISTRO_CONSUMO_MATERIAL_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>C680D5AD-2FA5-B686-8288-5658D22AEEE8</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78900500-6A2C-8EAF-F1CF-B2E1E2C6BEB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09EB20AA-9A5E-B30E-3368-2D1A872D372F" name="REGISTRO_CONSUMO_UNIDADE_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>A2C190D7-2AC3-A7B8-3499-9B83A385B9EB</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBFCDE59-7E1D-84D7-966B-81EF59698F72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F1E0328-C7E0-A347-FE3F-C1D69109A182" name="REGISTRO_CONSUMO_RESPONSAVEL_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>397B7881-4AD4-499F-6ADF-FD90E4C07C5F</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90CB5AE5-3BCF-BF21-03C9-8FCA8B6D5D2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

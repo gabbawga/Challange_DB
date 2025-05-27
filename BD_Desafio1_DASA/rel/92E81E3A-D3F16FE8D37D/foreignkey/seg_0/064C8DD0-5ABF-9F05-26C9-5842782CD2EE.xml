@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="064C8DD0-5ABF-9F05-26C9-5842782CD2EE" containerWithKeyObject="753282F4-0BC1-BB11-5BCE-F426EAAABFAF" localFKIndex="753CA976-54ED-BDAC-E041-1CDE393200E8" name="REGISTRO_CONSUMO_MATERIAL_FK">
+<createdBy>gabrielferreira</createdBy>
+<createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<generatorID>C680D5AD-2FA5-B686-8288-5658D22AEEE8</generatorID>
+<ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
+<referredTableLongName>MATERIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>041D8959-A18C-BF7D-A6D0-DDD71F38ECB2</referredTableID>
+<keyObject>EEC17C75-0D31-4B35-B2B2-C20725FC6184</keyObject>
+<referredKeyID>EEC17C75-0D31-4B35-B2B2-C20725FC6184</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MATERIAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
