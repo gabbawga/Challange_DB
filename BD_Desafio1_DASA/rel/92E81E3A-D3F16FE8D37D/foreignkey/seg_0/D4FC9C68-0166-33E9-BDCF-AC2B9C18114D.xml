@@ -2,6 +2,7 @@
 <FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D4FC9C68-0166-33E9-BDCF-AC2B9C18114D" containerWithKeyObject="753282F4-0BC1-BB11-5BCE-F426EAAABFAF" localFKIndex="6F1E0328-C7E0-A347-FE3F-C1D69109A182" name="REGISTRO_CONSUMO_RESPONSAVEL_FK">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Cada registro de consumo é feito por um único responsável. Um mesmo responsável pode realizar diversos registros.]]></comment>
 <generatorID>397B7881-4AD4-499F-6ADF-FD90E4C07C5F</generatorID>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <referredTableLongName>RESPONSAVEL</referredTableLongName>

@@ -2,6 +2,7 @@
 <FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="737A8191-FC1B-C00B-9CF0-923B5C2E0184" containerWithKeyObject="753282F4-0BC1-BB11-5BCE-F426EAAABFAF" localFKIndex="09EB20AA-9A5E-B30E-3368-2D1A872D372F" name="REGISTRO_CONSUMO_UNIDADE_FK">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Define que cada registro de consumo acontece em uma única unidade. Uma unidade pode ter muitos registros associados.]]></comment>
 <generatorID>A2C190D7-2AC3-A7B8-3499-9B83A385B9EB</generatorID>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <referredTableLongName>UNIDADE</referredTableLongName>

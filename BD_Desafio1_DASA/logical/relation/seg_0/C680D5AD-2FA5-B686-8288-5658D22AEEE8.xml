@@ -2,6 +2,7 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONSOME_MATERIAL" directorySegmentName="seg_0" id="C680D5AD-2FA5-B686-8288-5658D22AEEE8">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:19:00 UTC</createdTime>
+<comment><![CDATA[Indica que cada registro de consumo está vinculado a um único material. Um material pode ser consumido em diversos registros.]]></comment>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <engineerTo>
 <item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>

@@ -2,6 +2,8 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="REGISTRADO_POR_RESPONSAVEL" directorySegmentName="seg_0" id="397B7881-4AD4-499F-6ADF-FD90E4C07C5F">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:19:47 UTC</createdTime>
+<comment><![CDATA[Cada registro de consumo é feito por um único responsável. Um mesmo responsável pode realizar diversos registros.]]></comment>
+<commentInRDBMS><![CDATA[Cada registro de consumo é feito por um único responsável. Um mesmo responsável pode realizar diversos registros.]]></commentInRDBMS>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <engineerTo>
 <item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>

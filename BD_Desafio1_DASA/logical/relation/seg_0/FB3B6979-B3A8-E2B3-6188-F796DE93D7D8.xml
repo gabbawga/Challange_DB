@@ -2,6 +2,8 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EXECUTADA_POR_RESPONSAVEL" directorySegmentName="seg_0" id="FB3B6979-B3A8-E2B3-6188-F796DE93D7D8">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:21:45 UTC</createdTime>
+<comment><![CDATA[Cada movimentação é realizada por um único responsável. Um responsável pode executar várias movimentações.]]></comment>
+<commentInRDBMS><![CDATA[Cada movimentação é realizada por um único responsável. Um responsável pode executar várias movimentações.]]></commentInRDBMS>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <engineerTo>
 <item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>

@@ -2,6 +2,8 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MOVIMENTA_MATERIAL" directorySegmentName="seg_0" id="E7C97CCE-6E6B-1CB3-C879-EAEA5B1293E1">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:20:23 UTC</createdTime>
+<comment><![CDATA[Define que cada movimentação de estoque está relacionada a um único material. Um material pode ser movimentado várias vezes.]]></comment>
+<commentInRDBMS><![CDATA[Define que cada movimentação de estoque está relacionada a um único material. Um material pode ser movimentado várias vezes.]]></commentInRDBMS>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <engineerTo>
 <item key="92E81E3A-A989-0244-40B3-D3F16FE8D37D" value="true"/>

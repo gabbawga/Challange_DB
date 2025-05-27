@@ -2,6 +2,7 @@
 <FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="488BEC12-524D-7441-BFBC-8C37BB8D473D" containerWithKeyObject="87016F79-5D30-8B89-4787-DD272F740AB1" localFKIndex="8B085160-EF31-3D03-7F86-CECC4A3B6A65" name="MOVIMENTACAO_ESTOQUE_RESPONSAVEL_FK">
 <createdBy>gabrielferreira</createdBy>
 <createdTime>2025-05-27 01:43:43 UTC</createdTime>
+<comment><![CDATA[Cada movimentação é realizada por um único responsável. Um responsável pode executar várias movimentações.]]></comment>
 <generatorID>FB3B6979-B3A8-E2B3-6188-F796DE93D7D8</generatorID>
 <ownerDesignName>BD_Desafio1_DASA</ownerDesignName>
 <referredTableLongName>RESPONSAVEL</referredTableLongName>
